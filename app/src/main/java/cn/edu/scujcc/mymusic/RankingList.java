@@ -11,4 +11,6 @@ public class RankingList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ranking_list);
     }
+
+
 }

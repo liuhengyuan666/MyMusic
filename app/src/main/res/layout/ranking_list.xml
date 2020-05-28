@@ -61,7 +61,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/IMG_5081" />
+            app:srcCompat="@drawable/img_5081" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -169,7 +169,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/IMG_5078" />
+            app:srcCompat="@drawable/img_5078" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -229,7 +229,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/IMG_5080" />
+            app:srcCompat="@drawable/img_5080" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
