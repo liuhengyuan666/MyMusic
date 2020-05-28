@@ -37,26 +37,12 @@
 
     </LinearLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/home_viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#eee"
-        android:text="本地音乐"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
-
-    </androidx.viewpager.widget.ViewPager>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="408dp"
-        android:layout_height="88dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent">>
 
         <ImageView
             android:id="@+id/goListViewBtn"
@@ -68,37 +54,33 @@
             android:layout_width="190dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="12dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="12dp">
 
             <TextView
                 android:id="@+id/song_name"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.2"
+                android:gravity="bottom"
                 android:text="暂无音乐"
-                android:textSize="18dp"
-                android:gravity="bottom"/>
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/song_lyrics"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text=""
-                android:paddingTop="5dp"/>
-
+                android:paddingTop="5dp"
+                android:text="" />
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/play_or_pause"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bofang" />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/play_or_pause"
-        android:layout_width="64dp"
-        android:layout_height="85dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-        app:srcCompat="@drawable/bofang" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
