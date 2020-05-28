@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyMusic</string>
+    <string name="rankinglist1">音乐榜</string>
 </resources>
