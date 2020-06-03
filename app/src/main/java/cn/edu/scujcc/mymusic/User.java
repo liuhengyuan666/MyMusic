@@ -6,10 +6,19 @@ import androidx.annotation.Nullable;
 import java.util.Date;
 
 public class User {
+    private String id;
     private String username;
     private String password;
     private String phone;
-    private String sex;
+    private String gender;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -35,43 +44,23 @@ public class User {
         this.phone = phone;
     }
 
-    public String getSex() {
-        return sex;
+    public String getGender() {
+        return gender;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public User() {
-        super();
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(@Nullable Object obj) {
-        return super.equals(obj);
-    }
-
-    @NonNull
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    @NonNull
     @Override
     public String toString() {
-        return super.toString();
-    }
-
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
+        return "User{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
 
