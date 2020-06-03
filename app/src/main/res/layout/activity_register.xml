@@ -62,9 +62,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+        android:drawableStart="@drawable/ic_phone_android_black_24dp"
         android:ems="10"
-        android:hint="@string/login_username"
+        android:hint="@string/phone"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/r_phone" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/register_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
