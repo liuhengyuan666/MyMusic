@@ -31,4 +31,6 @@ public class UserLab {
         return INSTANCE;
     }
 
+    public void login(String user, String p, Handler handler) {
+    }
 }
