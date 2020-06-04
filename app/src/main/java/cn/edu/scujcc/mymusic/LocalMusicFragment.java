@@ -38,7 +38,7 @@ public class LocalMusicFragment extends Fragment {
     private ImageView cover, playBtn;
     private TextView name, singer;
     private ArrayList<Song> songList;
-    private GetMusicUtil util;
+    //private GetMusicUtil util;
     private RecyclerView localMusicList;
 
     private MusicService.MusicControl musicControl; //Binder实例
@@ -54,7 +54,7 @@ public class LocalMusicFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.localmusic_fragment, container, false);
+        View view = inflater.inflate(R.layout.loacalmusic_fragment, container, false);
         localMusicList = view.findViewById(R.id.localMusic_list);
         cover = getActivity().findViewById(R.id.goListViewBtn);
         playBtn = getActivity().findViewById(R.id.play_or_pause);
@@ -88,7 +88,7 @@ public class LocalMusicFragment extends Fragment {
     private void setData(){
         ContentResolver resolver = getActivity().getContentResolver();
         util = new GetMusicUtil(resolver);
-        songList= util.getMusic();
+        rankingSongList= util.getMusic();
     }
 
     private void initRv(){

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class RankingList extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<Album> mList;
-    public RvAdapter(List<Album> list){
+    public RankingList(List<Album> list){
         mList = list;
     }
 
@@ -79,4 +79,4 @@ public class RankingList extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         this.onItemClickListener = onItemClickListener;
     }
 }
-}
+
