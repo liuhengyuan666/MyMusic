@@ -12,7 +12,7 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".PlayerActivity">
+        <activity android:name=".PlayActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
