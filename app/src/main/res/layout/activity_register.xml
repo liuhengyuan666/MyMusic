@@ -26,10 +26,19 @@
         android:drawableStart="@drawable/ic_perm_identity_black_24dp"
         android:ems="10"
         android:hint="@string/login_username"
+        android:imeOptions="actionNext"
         android:inputType="textPersonName"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_logo" />
+
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/r_password1"
@@ -39,6 +48,7 @@
         android:drawableStart="@drawable/ic_lock_outline_black_24dp"
         android:ems="10"
         android:hint="@string/login_password"
+        android:imeOptions="actionNext"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +62,7 @@
         android:drawableStart="@drawable/ic_lock_outline_black_24dp"
         android:ems="10"
         android:hint="@string/login_password_2"
+        android:imeOptions="actionNext"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +76,9 @@
         android:drawableStart="@drawable/ic_phone_android_black_24dp"
         android:ems="10"
         android:hint="@string/phone"
-        android:inputType="textPersonName"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r_password2" />
@@ -77,9 +90,9 @@
         android:layout_marginStart="16dp"
         android:checkedButton="@id/r_unknown"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView">
+        app:layout_constraintBottom_toBottomOf="@+id/textView_title2"
+        app:layout_constraintStart_toEndOf="@+id/textView_title2"
+        app:layout_constraintTop_toTopOf="@+id/textView_title2">
 
         <RadioButton
             android:id="@+id/r_male"
@@ -101,7 +114,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -115,10 +128,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_done_black_24dp"
         android:text="@string/login_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_title2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

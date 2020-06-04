@@ -1,124 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    android:background="@drawable/bg2">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@color/bgColor"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/local_music_bottomalayout"
+        android:background="#33EEEEEE">
 
         <ImageView
-            android:id="@+id/menu"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/ic_menu" />
-
-        <TextView
-            android:id="@+id/goLocalMusic"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="本地音乐"
-            android:textColor="@color/textColor"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/goOnlineMusic"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="在线音乐"
-            android:textColor="@color/textLightColor"
-            android:textSize="15dp" />
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9933FA"/>
 
         <ImageView
-            android:id="@+id/search"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            app:srcCompat="@drawable/ic_menu_search" />
-
-
-    </LinearLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/home_viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:text="本地音乐"
-        android:background="#eee"/>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="horizontal">
-
-
-        <ImageView
-            android:id="@+id/goListViewBtn"
             android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_song"
+            android:layout_centerVertical="true"
+            android:background="@drawable/a1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/local_music_bottom_iv_icon"/>
+
+        <TextView
+            android:id="@+id/local_music_bottom_tv_song"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/play_page_default_cover" />
+            android:text="告白气球"
+            android:layout_toRightOf="@+id/local_music_bottom_iv_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
-        <LinearLayout
-            android:layout_width="190dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:paddingLeft="12dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/song_name"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1.2"
-                android:text="暂无音乐"
-                android:textSize="18dp"
-                android:gravity="bottom"/>
-
-            <TextView
-                android:id="@+id/song_lyrics"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text=""
-                android:paddingTop="5dp"/>
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/local_music_bottom_tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周杰伦"
+            android:textSize="14sp"
+            android:layout_below="@+id/local_music_bottom_tv_song"
+            android:layout_alignLeft="@+id/local_music_bottom_tv_song"
+            android:layout_marginTop="10dp"/>
 
         <ImageView
-            android:id="@+id/play_or_pause"
-            android:layout_width="50dp"
+            android:id="@+id/local_music_bottom_iv_next"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_play_bar_btn_play" />
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_next" />
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="50dp"
+            android:id="@+id/local_music_bottom_iv_play"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_play_bar_btn_next" />
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_play"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_next"
+            android:layout_marginRight="20dp"/>
 
         <ImageView
-            android:id="@+id/goListBtn"
-            android:layout_width="50dp"
+            android:id="@+id/local_music_bottom_iv_last"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_play_bar_btn_playlist" />
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_last"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_play"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
 
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
