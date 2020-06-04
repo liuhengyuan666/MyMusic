@@ -15,7 +15,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <TextView
-            android:id="@+id/channel_title"
+            android:id="@+id/music_name7"
             android:layout_width="207dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/channel_title4"
+            android:id="@+id/music_name8"
             android:layout_width="207dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -38,10 +38,10 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/channel_title" />
+            app:layout_constraintTop_toBottomOf="@+id/music_name7" />
 
         <TextView
-            android:id="@+id/channel_title5"
+            android:id="@+id/music_name9"
             android:layout_width="207dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -51,7 +51,7 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/channel_title4" />
+            app:layout_constraintTop_toBottomOf="@+id/music_name8" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -92,7 +92,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_title1"
         android:layout_width="122dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/top" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_title2"
         android:layout_width="131dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
@@ -120,7 +120,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView_title1">
 
         <TextView
             android:id="@+id/music_name1"
@@ -180,7 +180,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textView_title2">
 
         <TextView
             android:id="@+id/music_name4"
