@@ -38,7 +38,7 @@ public class LocalMusicFragment extends Fragment {
     private ImageView cover, playBtn;
     private TextView name, singer;
     private ArrayList<Song> songList;
-    //private GetMusicUtil util;
+    private GetMusicUtil util;
     private RecyclerView localMusicList;
 
     private MusicService.MusicControl musicControl; //Binder实例
@@ -88,7 +88,7 @@ public class LocalMusicFragment extends Fragment {
     private void setData(){
         ContentResolver resolver = getActivity().getContentResolver();
         util = new GetMusicUtil(resolver);
-        rankingSongList= util.getMusic();
+        songList= util.getMusic();
     }
 
     private void initRv(){
