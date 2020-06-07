@@ -111,7 +111,7 @@ public class LocalMusicFragment extends Fragment {
 
     private void doRegisterReceiver(){
         mReceiver = new ContentReceiver();
-        IntentFilter filter = new IntentFilter("com.example.musicplayer.service");
+        IntentFilter filter = new IntentFilter("cn.edu.scujcc.mymusic.service");
         getActivity().registerReceiver(mReceiver, filter);
     }
 

@@ -13,7 +13,7 @@ public class Album implements Serializable {
     String top1;
     String top2;
     String top3;
-    List<RankingSongList> rankingsonglists;
+    List<SongList> songLists;
 
     public String getName() {
         return name;
@@ -40,12 +40,12 @@ public class Album implements Serializable {
     }
 
 
-    public List<RankingSongList> getRankingSongLists() {
-        return rankingsonglists;
+    public List<SongList> getSongLists() {
+        return songLists;
     }
 
-    public void setRankingSongLists(List<RankingSongList> rankingSongLists) {
-        this.rankingSongLists = rankingSongLists;
+    public void setSongLists(List<SongList> songLists) {
+        this.songLists = songLists;
     }
 
     public String getAlbumImgPath() {

@@ -16,7 +16,7 @@ import android.util.Log;
 import android.util.Size;
 import android.widget.ImageView;
 
-import com.example.musicplayer.bean.Song;
+import cn.edu.scujcc.mymusic.Song;
 
 import java.io.File;
 import java.io.FileDescriptor;

@@ -11,9 +11,9 @@ import android.os.Environment;
 import android.os.IBinder;
 import android.os.Message;
 
-import com.example.musicplayer.R;
-import com.example.musicplayer.activity.MainActivity;
-import com.example.musicplayer.fragment.LocalMusicFragment;
+import cn.edu.scujcc.mymusic.R;
+import cn.edu.scujcc.mymusic.MainActivity;
+import cn.edu.scujcc.mymusic.LocalMusicFragment;
 
 import java.io.File;
 import java.io.IOException;
@@ -97,7 +97,7 @@ public class MusicService extends Service {
 
     protected void sendContentBroadcast(){
         Intent intent = new Intent();
-        intent.setAction("com.example.musicplayer.service");
+        intent.setAction("cn.edu.scujcc.mymusic.service");
         Bundle bundle = new Bundle();
         bundle.putInt("duration", player.getDuration());
         bundle.putInt("currentDuration", player.getCurrentPosition());

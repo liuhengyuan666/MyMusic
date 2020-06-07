@@ -16,6 +16,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import cn.edu.scujcc.mymusic.ImgChangeToBitMap;
+import cn.edu.scujcc.mymusic.ParseJsonUtil;
+import cn.edu.scujcc.mymusic.R;
+import cn.edu.scujcc.mymusic.songListAdapter;
+import cn.edu.scujcc.mymusic.Album;
+import cn.edu.scujcc.mymusic.Song;
+import cn.edu.scujcc.mymusic.SongList;
+import cn.edu.scujcc.mymusic.LocalMusicFragment;
+import cn.edu.scujcc.mymusic.MusicService;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;

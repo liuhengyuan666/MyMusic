@@ -159,7 +159,7 @@ public class PlayActivity extends AppCompatActivity {
     private void doRegisterReceiver() {
         mReceiver=new ContentReceiver();
         IntentFilter filter = new IntentFilter(
-                "com.example.musicplayer.service");
+                "cn.edu.scujcc.mymusic.service");
         registerReceiver(mReceiver, filter);
     }
 
