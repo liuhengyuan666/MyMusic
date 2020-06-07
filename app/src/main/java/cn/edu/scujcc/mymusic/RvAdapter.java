@@ -1,4 +1,4 @@
-package com.example.musicplayer.adapter;
+package cn.edu.scujcc.mymusic;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+import cn.edu.scujcc.mymusic.Album;
+import cn.edu.scujcc.mymusic.ImgChangeToBitMap;
+import cn.edu.scujcc.mymusic.R;
+
 
 public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<Album> mList;
