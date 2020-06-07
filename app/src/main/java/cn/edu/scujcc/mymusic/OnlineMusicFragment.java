@@ -19,18 +19,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.musicplayer.ImgChangeToBitMap;
-import com.example.musicplayer.ParseJsonUtil;
-import com.example.musicplayer.activity.ListsActivity;
-import com.example.musicplayer.activity.MainActivity;
-import com.example.musicplayer.activity.PlayActivity;
-import com.example.musicplayer.bean.Album;
-import com.example.musicplayer.R;
-import com.example.musicplayer.adapter.RvAdapter;
-import com.example.musicplayer.bean.Song;
-import com.example.musicplayer.bean.SongList;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
