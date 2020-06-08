@@ -24,6 +24,6 @@ public interface UserApi {
      * @return
      */
     @POST("/user/register")
-    Call<User> register(@Body User user);
+    Call<Result<User>> register(@Body User user);
 
 }

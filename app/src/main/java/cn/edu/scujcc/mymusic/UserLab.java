@@ -74,19 +74,33 @@ public class UserLab {
         Retrofit retrofit = RetrofitClient.get();
         UserApi api = retrofit.create(UserApi.class);
         Log.d(TAG, "准备注册的用户信息是：" + user);
-        Call<User> call = api.register(user);
-        call.enqueue(new Callback<User>() {
+        Call<Result<User>> call = api.register(user);
+        call.enqueue(new Callback<Result<User>>() {
             @Override
-            public void onResponse(Call<User> call, Response<User> response) {
-                Log.d(TAG,"用户成功注册");
-                Log.d(TAG,"返回数据是"+response.body());
-                Message msg= new Message();
-                msg.what=USER_REGISTER_SUCCESS;
-                handler.sendMessage(msg);
+            public void onResponse(Call<Result<User>> call, Response<Result<User>> response) {
+                if (response.body() != null) {
+                    Result<User> result = response.body();
+                    if (result.getStatus() == Result.OK) {
+                        Log.d(TAG, "用户成功注册");
+                        Log.d(TAG, "返回数据是" + response.body());
+                        Message msg = new Message();
+                        msg.what = USER_REGISTER_SUCCESS;
+                        handler.sendMessage(msg);
+                    }else if (result.getStatus() == Result.ERROR){
+                        Message msg = new Message();
+                        msg.what = USER_REGISTER_FAIL;
+                        handler.sendMessage(msg);
+                    }
+                }else{
+                    Log.e(TAG,"注册失败！");
+                    Message msg = new Message();
+                    msg.what = USER_REGISTER_FAIL;
+                    handler.sendMessage(msg);
+                }
             }
 
             @Override
-            public void onFailure(Call<User> call, Throwable t) {
+            public void onFailure(Call<Result<User>> call, Throwable t) {
                 Log.e(TAG,"注册失败！");
                 Message msg = new Message();
                 msg.what = USER_REGISTER_FAIL;

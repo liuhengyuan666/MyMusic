@@ -64,6 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (!password1.toString().equals("") && !password2.toString().equals("")) {
             if (!password2.toString().equals(password1.toString())) { //两次密码不相同
                 what = 2;
+                Toast.makeText(RegisterActivity.this,"注册失败，两次密码不相同",Toast.LENGTH_LONG).show();
                 error = true;
                 errorMessage = "两次密码不相同";
             } else {
@@ -88,12 +89,11 @@ public class RegisterActivity extends AppCompatActivity {
             default:
                 u.setGender("保密");
         }
-        lab.register(u, handler);
 
         //本地判断测试
         switch (what){
-             case 2:
-               Toast.makeText(RegisterActivity.this,"注册失败",Toast.LENGTH_LONG).show();
+             case 1:
+                 lab.register(u, handler);
        }
     }
 }
