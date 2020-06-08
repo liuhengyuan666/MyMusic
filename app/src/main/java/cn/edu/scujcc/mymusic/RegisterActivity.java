@@ -57,7 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
         u.setUsername(!username.toString().equals("") ? username.toString() : "");
 
         //密码
-        EditText passwordInput1 = findViewById(R.id.r_password1);
+        EditText passwordInput1 = findViewById(R.id.Password);
         EditText passwordInput2 = findViewById(R.id.r_password2);
         Editable password1 = passwordInput1.getText();//edittext 不能用null判断
         Editable password2 = passwordInput2.getText();

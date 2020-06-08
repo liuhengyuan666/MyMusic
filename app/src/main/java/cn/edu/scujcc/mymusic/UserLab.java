@@ -17,7 +17,6 @@ public class UserLab {
     public final static int USER_REGISTER_SUCCESS = 2;
     public final static String USER_CURRENT = "USER_CURRENT";
     public final static String USER_TOKEN = "USER_TOKEN";
-
     private final static String TAG = "MyMusic";
     private static UserLab INSTANCE = null;
 
