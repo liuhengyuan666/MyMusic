@@ -31,6 +31,67 @@ public class UserLab {
         return INSTANCE;
     }
 
-    public void login(String user, String p, Handler handler) {
+    public void login(String username, String password, Handler handler){
+        Retrofit retrofit = RetrofitClient.get();
+        UserApi api = retrofit.create(UserApi.class);
+        Call<Result<String>> call = api.login(username, password);
+        call.enqueue(new Callback<Result<String>>() {
+            @Override
+            public void onResponse(Call<Result<String>> call, Response<Result<String>> response) {
+                if (response.body() != null) {
+                    Log.d(TAG, "登录结果是：" + response.body().toString());
+                    Result<String> result = response.body();
+                    if (result.getStatus() == Result.OK) {  //登录成功
+                        Message msg = new Message();
+                        msg.what = USER_LOGIN_SUCCESS;
+                        msg.obj = result.getData();
+                        handler.sendMessage(msg);
+                    }else {
+                        Message msg = new Message();
+                        msg.what = USER_LOGIN_PASSWORD_ERROR;
+                        msg.obj = result.getMessage();
+                        handler.sendMessage(msg);
+                    }
+                }else {
+                    Message msg = new Message();
+                    msg.what = USER_LOGIN_FAIL;
+                    handler.sendMessage(msg);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Result<String>> call, Throwable t) {
+                Log.e(TAG, "登录失败", t);
+                Message msg = new Message();
+                msg.what = USER_LOGIN_FAIL;
+                handler.sendMessage(msg);
+            }
+        });
+    }
+
+    //用户注册
+    public void register(User user,Handler handler){
+        Retrofit retrofit = RetrofitClient.get();
+        UserApi api = retrofit.create(UserApi.class);
+        Log.d(TAG, "准备注册的用户信息是：" + user);
+        Call<User> call = api.register(user);
+        call.enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response) {
+                Log.d(TAG,"用户成功注册");
+                Log.d(TAG,"返回数据是"+response.body());
+                Message msg= new Message();
+                msg.what=USER_REGISTER_SUCCESS;
+                handler.sendMessage(msg);
+            }
+
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+                Log.e(TAG,"注册失败！");
+                Message msg = new Message();
+                msg.what = USER_REGISTER_FAIL;
+                handler.sendMessage(msg);
+            }
+        });
     }
 }
