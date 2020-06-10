@@ -16,7 +16,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/abc_vector_test" />
+            app:srcCompat="@drawable/hot_list" />
 
         <TextView
             android:id="@+id/textView"
