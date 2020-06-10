@@ -10,11 +10,11 @@
 
     <ImageView
         android:id="@+id/register_logo"
-        android:layout_width="76dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="122dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo2" />
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/logoname" />
 
     <requestFocus
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         android:id="@+id/Password"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:drawableStart="@drawable/ic_lock_outline_black_24dp"
         android:ems="10"
         android:hint="@string/login_password"
@@ -59,7 +59,7 @@
         android:id="@+id/r_password2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:drawableStart="@drawable/ic_lock_outline_black_24dp"
         android:ems="10"
         android:hint="@string/login_password_2"
@@ -73,7 +73,7 @@
         android:id="@+id/r_phone"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:drawableStart="@drawable/ic_phone_android_black_24dp"
         android:ems="10"
         android:hint="@string/phone"
@@ -128,7 +128,7 @@
         android:id="@+id/register_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         android:drawableStart="@drawable/ic_done_black_24dp"
         android:text="@string/login_register"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,13 +139,13 @@
         android:id="@+id/logoname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="12dp"
         android:text="动听音乐"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/register_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/register_logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
