@@ -28,9 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".PlayListActivity"></activity>
         <activity android:name=".PlayActivity"></activity>
         <activity android:name=".ListsActivity"></activity>
