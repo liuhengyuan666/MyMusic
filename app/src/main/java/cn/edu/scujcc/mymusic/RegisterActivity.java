@@ -23,12 +23,12 @@ public class RegisterActivity extends AppCompatActivity {
             if (msg != null){
                 switch (msg.what){
                     case UserLab.USER_REGISTER_SUCCESS:
-                        Toast.makeText(RegisterActivity.this,"注册成功!",Toast.LENGTH_LONG).show();
+                        Toast.makeText(RegisterActivity.this,"注册成功！动听音乐欢迎您的加入！",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
                         startActivity(intent);
                         break;
                     case UserLab.USER_REGISTER_FAIL:
-                        Toast.makeText(RegisterActivity.this,"注册失败!",Toast.LENGTH_LONG).show();
+                        Toast.makeText(RegisterActivity.this,"注册失败！",Toast.LENGTH_LONG).show();
                         break;
                 }
             }

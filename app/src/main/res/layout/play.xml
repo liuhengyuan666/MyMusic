@@ -62,18 +62,18 @@
 
         <TextView
             android:id="@+id/circle1"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
             android:gravity="center"
-            android:layout_margin="5dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/circle_shape_active"/>
 
         <TextView
             android:id="@+id/circle2"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
             android:gravity="center"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
             android:background="@drawable/circle_shape"/>
 
     </LinearLayout>
@@ -88,7 +88,7 @@
             android:id="@+id/current_duration"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:text="00:00"
             android:textColor="#FFFFFF" />
         <SeekBar
@@ -101,7 +101,7 @@
             android:id="@+id/duration"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="20dp"
             android:text="00:00"
             android:textColor="#FFFFFF" />
 
@@ -111,7 +111,7 @@
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 

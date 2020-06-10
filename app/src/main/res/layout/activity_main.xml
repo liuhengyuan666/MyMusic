@@ -31,7 +31,7 @@
             android:gravity="center"
             android:text="本地音乐"
             android:textColor="@color/textColor"
-            android:textSize="15dp" />
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/goOnlineMusic"
@@ -41,7 +41,7 @@
             android:gravity="center"
             android:text="在线音乐"
             android:textColor="@color/textLightColor"
-            android:textSize="15dp" />
+            android:textSize="18dp" />
 
         <ImageView
             android:id="@+id/search"
@@ -74,7 +74,7 @@
             android:id="@+id/goListViewBtn"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="1dp"
             app:srcCompat="@drawable/play_page_default_cover" />
 
@@ -82,7 +82,7 @@
             android:layout_width="190dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="12dp"
+            android:paddingLeft="15dp"
             android:orientation="vertical">
 
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1.2"
                 android:text="暂无音乐"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:gravity="bottom"/>
 
             <TextView
@@ -99,15 +99,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text=""
+                android:textSize="12dp"
+                android:text="歌手"
                 android:paddingTop="5dp"/>
 
         </LinearLayout>
 
         <ImageView
             android:id="@+id/play_or_pause"
-            android:layout_width="42dp"
+            android:layout_width="45dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
             app:srcCompat="@drawable/main_play_icon" />
 
         <ImageView
@@ -118,7 +120,7 @@
 
         <ImageView
             android:id="@+id/goListBtn"
-            android:layout_width="20dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/none" />
 

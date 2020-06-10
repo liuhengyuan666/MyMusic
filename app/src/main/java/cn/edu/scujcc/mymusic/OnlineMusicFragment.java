@@ -67,7 +67,7 @@ public class OnlineMusicFragment extends Fragment {
                     }
                     try {
                         System.out.println(i);
-                        URL url = new URL("http://tingapi.ting.baidu.com/v1/restserver/ting?from=qianqian&version=2.1.0&method=baidu.ting.billboard.billList&format=json&type=" + i + "&offset=0&size=50");
+                        URL url = new URL("http://tingapi.ting.baidu.com/v1/restserver/ting?from=qianqian&version=2.1.0&method=baidu.ting.billboard.billList&type=" + i + "&offset=0&size=10");
                         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                         connection.setRequestMethod("GET");
                         connection.setConnectTimeout(8000);
@@ -140,6 +140,6 @@ public class OnlineMusicFragment extends Fragment {
         task.execute(song.getImgPath());
         name.setText(song.getName());
         singer.setText(song.getSinger());
-        playBtn.setImageResource(R.drawable.ic_play_bar_btn_pause);
+        playBtn.setImageResource(R.drawable.main_pause_icon);
     }
 }

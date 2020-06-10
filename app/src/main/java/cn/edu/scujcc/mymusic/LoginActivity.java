@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     private UserLab lab = UserLab.getInstance();
 
     private void loginSucess() {
-        Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_LONG).show();
+        Toast.makeText(LoginActivity.this, "登录成功！动听音乐欢迎您！", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
     }

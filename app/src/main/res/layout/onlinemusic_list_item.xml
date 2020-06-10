@@ -10,14 +10,14 @@
         android:id="@+id/cover"
         android:layout_width="120dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:src="@drawable/play_page_default_cover" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="15dp">
 
         <TextView
             android:id="@+id/top1"

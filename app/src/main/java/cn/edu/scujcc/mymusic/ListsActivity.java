@@ -98,7 +98,7 @@ public class ListsActivity extends AppCompatActivity {
         slAdapter.setOnItemClickListener(new songListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, final SongList songList, int position) {
-                Toast.makeText(ListsActivity.this, "正在播放："+songList.getTitle(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListsActivity.this, "动听音乐正在为您播放："+songList.getTitle(), Toast.LENGTH_SHORT).show();
                 new Thread(new Runnable() {
                     @Override
                     public void run() {

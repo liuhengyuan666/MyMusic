@@ -99,7 +99,7 @@ public class LocalMusicFragment extends Fragment {
             @Override
             public void onItemClick(View view, Song song, int position) {
 
-                Toast.makeText(getActivity(), "正在播放："+song.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "动听音乐正在为您播放："+song.getName(), Toast.LENGTH_SHORT).show();
                 cover.setImageBitmap(song.getAlbum_img());
                 name.setText(song.getName());
                 singer.setText(song.getSinger());
