@@ -4,27 +4,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/play_page_default_bg">
+    android:background="@drawable/play_act_newbg">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#666"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_arrow_down" />
+            android:layout_width="40dp"
+            app:srcCompat="@drawable/music_icon" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -58,6 +57,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:gravity="center">
 
         <TextView
@@ -83,28 +83,35 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/current_duration"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:text="00:00"/>
+            android:layout_marginLeft="10dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF" />
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
+
         <TextView
             android:id="@+id/duration"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:text="00:00"/>
+            android:layout_marginRight="10dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -112,7 +119,7 @@
             android:id="@+id/imageView8"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_play_btn_loop" />
+            app:srcCompat="@drawable/none" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -123,19 +130,21 @@
                 android:id="@+id/imageView9"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/ic_play_btn_prev" />
+                app:srcCompat="@drawable/none" />
 
             <ImageView
                 android:id="@+id/play_play_or_pause"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/ic_play_btn_pause" />
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/new_play_act_pause" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/ic_play_btn_next" />
+                app:srcCompat="@drawable/none" />
         </LinearLayout>
 
         <TextView

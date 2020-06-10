@@ -120,10 +120,10 @@ public class PlayActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(isPlaying){
                     service.pausePlay();
-                    playOrPauseBtn.setImageResource(R.drawable.ic_play_btn_play);
+                    playOrPauseBtn.setImageResource(R.drawable.new_play_act_play);
                 }else {
                     service.continuePlay();
-                    playOrPauseBtn.setImageResource(R.drawable.ic_play_btn_pause);
+                    playOrPauseBtn.setImageResource(R.drawable.new_play_act_pause);
                 }
             }
         });

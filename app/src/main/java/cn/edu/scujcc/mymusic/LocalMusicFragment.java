@@ -68,10 +68,10 @@ public class LocalMusicFragment extends Fragment {
             public void onClick(View v) {
                 if(isPlaying){
                     musicControl.pausePlay();
-                    playBtn.setImageResource(R.drawable.ic_play_bar_btn_play);
+                    playBtn.setImageResource(R.drawable.main_play_icon);
                 }else {
                     musicControl.continuePlay();
-                    playBtn.setImageResource(R.drawable.ic_play_bar_btn_pause);
+                    playBtn.setImageResource(R.drawable.main_pause_icon);
                 }
             }
         });
@@ -103,7 +103,7 @@ public class LocalMusicFragment extends Fragment {
                 cover.setImageBitmap(song.getAlbum_img());
                 name.setText(song.getName());
                 singer.setText(song.getSinger());
-                playBtn.setImageResource(R.drawable.ic_play_bar_btn_pause);
+                playBtn.setImageResource(R.drawable.main_pause_icon);
                 musicControl.play(song.getUrl());
             }
         });

@@ -18,10 +18,10 @@
 
         <ImageView
             android:id="@+id/menu"
-            android:layout_width="35dp"
+            android:layout_width="10dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/ic_menu" />
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@drawable/none" />
 
         <TextView
             android:id="@+id/goLocalMusic"
@@ -45,10 +45,10 @@
 
         <ImageView
             android:id="@+id/search"
-            android:layout_width="35dp"
+            android:layout_width="10dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            app:srcCompat="@drawable/ic_menu_search" />
+            android:layout_marginRight="0dp"
+            app:srcCompat="@drawable/none" />
 
 
     </LinearLayout>
@@ -65,7 +65,7 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="horizontal">
 
@@ -74,6 +74,8 @@
             android:id="@+id/goListViewBtn"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
             app:srcCompat="@drawable/play_page_default_cover" />
 
         <LinearLayout
@@ -104,21 +106,21 @@
 
         <ImageView
             android:id="@+id/play_or_pause"
-            android:layout_width="50dp"
+            android:layout_width="42dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_play_bar_btn_play" />
+            app:srcCompat="@drawable/main_play_icon" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="50dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_play_bar_btn_next" />
+            app:srcCompat="@drawable/none" />
 
         <ImageView
             android:id="@+id/goListBtn"
-            android:layout_width="50dp"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_play_bar_btn_playlist" />
+            app:srcCompat="@drawable/none" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
