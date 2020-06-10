@@ -23,10 +23,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="百度热歌榜"
-            android:textSize="20dp"
             android:paddingLeft="10dp"
-            android:textColor="@color/textColor"/>
+            android:text="音乐榜"
+            android:textColor="@color/textColor"
+            android:textSize="20dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -38,7 +38,7 @@
             android:id="@+id/album_img"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/music_img" />
+            app:srcCompat="@drawable/IMG_5078" />
 
         <LinearLayout
             android:layout_width="match_parent"
